@@ -1,1 +1,3 @@
 backend_host: backend.avk07.online
+app_location: /usr/share/nginx/html
+component: frontend
