@@ -1,6 +1,8 @@
 - name: Configuring backend server
   hosts: backend
   become: yes
+  vars_files:
+  - /var/expense/credentials_mysql.yaml # this is there in the ansible server
   roles:
   - backend
   
