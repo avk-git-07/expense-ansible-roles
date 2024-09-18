@@ -1,0 +1,15 @@
+# - name: nginx install and run
+#   hosts: all
+#   become: yes # this means, it is under sudo access, to install nginx we need root/sudo access in aws ansible server.
+#   tasks:
+#   - name: install nginx
+#     ansible.builtin.package: # package will handle all OS, if we know the target server's Os is linux then we can directly write dnf inplace of package.
+#       name: nginx
+#       state: present
+
+#   - name: run nginx
+#     ansible.builtin.service: # with this service module we will enable and start the nginx
+#       name: nginx
+#       state: started
+#       enabled: yes
+
